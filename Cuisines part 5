@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Indian Cuisines</title>
+<style>
+  *{
+    margin:0; 
+    padding:0; 
+    box-sizing:border-box; 
+    font-family: Arial, sans-serif;
+}
+  body{
+    background:#fff; 
+    color:#333;
+}
+  .container{
+    max-width:1000px; 
+    margin:0 auto;
+     padding:0 15px;
+    }
+  
+  /* Title */
+  h1.main-title{
+    text-align:center;
+    color:#6a7a94;
+    font-size:32px;
+    margin:15px 0;
+    font-weight:700;
+    letter-spacing:1px;
+  }
+
+  /* Hero Section */
+  .hero{
+    position:relative;
+    width:100%;
+    height:480px;
+    background:url('spices1.jfif') center/cover no-repeat;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .hero::before{
+    content:'';
+    position:absolute;
+    inset:0;
+    background:rgba(255,255,255,0.5);
+  }
+  .hero-text{
+    position:relative;
+    background:#2a7f8e;
+    color:#fff;
+    max-width:520px;
+    padding:18px 20px;
+    text-align:center;
+    font-size:11px;
+    line-height:1.6;
+    z-index:1;
+  }
+
+  /* Navigation */
+  .nav{
+    background:#fef3d8;
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    padding:12px 0;
+    flex-wrap:wrap;
+  }
+  .nav a{
+    text-decoration:none;
+    color:#6a7a94;
+    font-weight:bold;
+    font-size:14px;
+  }
+  .nav a:hover{color:#000;}
+
+  /* Section Title */
+  .section-title{
+    background:#fdf199;
+    color:#7a0a0a;
+    text-align:center;
+    padding:6px 0;
+    font-weight:bold;
+    font-size:14px;
+    margin:20px 0 15px 0;
+  }
+
+  /* Food Card */
+  .food-card{
+    background:#fdf5fc;
+    border:3px solid #fdf0ff;
+    border-radius:10px;
+    max-width:650px;
+    margin:0 auto 10px auto;
+    display:flex;
+    align-items:center;
+    padding:12px;
+    gap:20px;
+  }
+  .food-card img{
+    width:200px;
+    height:120px;
+    object-fit:cover;
+    flex-shrink:0;
+  }
+  .food-card p{
+    font-size:10px;
+    line-height:1.5;
+    color:#333;
+  }
+
+  /* Footer */
+  footer{
+    background:#2b2f3e;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    padding:18px 150px;
+    font-size:11px;
+    margin-top:25px;
+  }
+  footer span{
+    color:#ff8a8a;
+}
+  
+  @media(max-width:600px){
+    .food-card{flex-direction:column; text-align:center;}
+    footer{padding:18px 20px; flex-direction:column; gap:5px; align-items:center;}
+    .nav{gap:15px;}
+    .hero{height:350px;}
+  }
+</style>
+</head>
+<body>
+
+<h1 class="main-title">Indian Cuisines</h1>
+
+<div class="container">
+  <div class="hero">
+    <div class="hero-text">
+      The traditional food of India has been widely appreciated for its fabulous use of herbs and spices. Indian cuisine is known for its large assortment of dishes. The cooking style varies from region to region and is largely divided into South Indian & North Indian cuisine. India is quite famous for its diverse multi cuisine available in a large number of restaurants and hotel resorts, which is reminiscent of unity in diversity.
+    </div>
+  </div>
+</div>
+
+<div class="nav">
+  <a href="#bengali">BENGALI</a>
+  <a href="#gujarati">GUJARATI</a>
+  <a href="#mughlai">MUGHLAI</a>
+  <a href="#punjabi">PUNJABI</a>
+  <a href="#south">SOUTH INDIAN</a>
+</div>
+
+<div class="container">
+
+  <div id="bengali" class="section-title">Bengali Food</div>
+  <div class="food-card">
+    <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?q=80&w=400" alt="Bengali Food">
+    <p>Bengali cuisine is appreciated for its fabulous use of panchphoron, a term used to refer to the five essential spices, namely mustard, fenugreek seed, cumin seed, aniseed, and black cumin seed. The specialty of Bengali food lies in the perfect blend of sweet and spicy flavors.</p>
+  </div>
+
+  <div id="gujarati" class="section-title">Gujarati Food</div>
+  <div class="food-card">
+    <img src=Gujarati_image.jfif>
+    <p>The traditional Gujarati food is primarily vegetarian and has a high nutritional value. The typical Gujarati thali consists of varied kinds of lip smacking dishes. Gujarati cuisine has so much to offer and each dish has an absolutely different cooking style.</p>
+  </div>
+
+  <div id="mughlai" class="section-title">Mughlai Food</div>
+  <div class="food-card">
+    <img src="https://images.unsplash.com/photo-1505253758473-96b7015fcd40?q=80&w=400" alt="Mughlai Food">
+    <p>Mughlai cuisine is one of the most popular cuisines, whose origin can be traced back to the times of Mughal Empire. Mughlai cuisine consists of the dishes that were prepared in the kitchens of the royal Mughal Emperors. Indian cuisine is predominantly influenced by the cooking style practiced during the Mughal era.</p>
+  </div>
+
+  <div id="punjabi" class="section-title">Punjabi Food</div>
+  <div class="food-card">
+    <img src="Punjabi_food.jfif">
+    <p>The cuisine of Punjab has an enormous variety of mouth-watering vegetarian as well as non vegetarian dishes. The spice content ranges from minimal to pleasant to high. Punjabi food is usually relished by people of all communities. In Punjab, home cooking differs from the restaurant cooking style.</p>
+  </div>
+
+  <div id="south" class="section-title">South Indian Cuisine</div>
+  <div class="food-card">
+    <img src="https://images.unsplash.com/photo-1668236543090-82eba5ee5976?q=80&w=400" alt="South Indian Food">
+    <p>The cuisine of South India is known for its light, low calorie appetizing dishes. The traditional food of South India is mainly rice based. The cuisine is famous for its wonderful mixing of rice and lentils to prepare yummy lip smacking dosas, vadas, idlis and uttapams.</p>
+  </div>
+
+</div>
+
+<footer>
+  <div><span>Published By:</span> Author Name</div>
+  <div><span>Date:</span> 25/04/2021</div>
+</footer>
+
+</body>
+</html>
